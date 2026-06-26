@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="zh-Hans">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="AISmartmail is a native macOS AI mail client with local-only vectorization." />
+    <title>AISmartmail - macOS AI Mail Client</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <img class="app-icon" src="assets/aismartmail-icon.png" alt="AISmartmail app icon" />
+          <p class="eyebrow">Native macOS Mail Client</p>
+          <h1>AISmartmail</h1>
+          <p class="lead">
+            原生 SwiftUI 邮件客户端，支持 IMAP/POP3/SMTP、附件、草稿、星标邮件，以及基于本地向量化数据的 AI 邮件问答。
+          </p>
+          <p class="lead english">
+            A native SwiftUI mail client for macOS with local-only vectorization, AI Q&amp;A, attachments, drafts, and everyday mailbox workflows.
+          </p>
+          <div class="actions" aria-label="Primary links">
+            <a class="button primary" href="https://github.com/bennix/AISmartmail/releases/download/v0.1.0/AISmartmail-macOS-arm64.dmg">
+              下载 macOS DMG
+            </a>
+            <a class="button secondary" href="https://github.com/bennix/AISmartmail">
+              查看 GitHub Repo
+            </a>
+          </div>
+        </div>
+        <div class="release-panel" aria-label="Release information">
+          <span class="label">Latest Release</span>
+          <strong>v0.1.0</strong>
+          <span>Apple Silicon macOS build</span>
+          <a href="https://github.com/bennix/AISmartmail/releases/tag/v0.1.0">Release notes</a>
+        </div>
+      </section>
+
+      <section class="features" aria-label="Highlights">
+        <article>
+          <h2>邮件工作流</h2>
+          <p>支持通用邮箱配置、IMAP/POP3/SMTP、刷新收信、发送邮件、草稿同步、存档、垃圾邮件、星标和已读状态。</p>
+        </article>
+        <article>
+          <h2>AI 问答</h2>
+          <p>AI 回答基于已经向量化的邮件数据，支持 Markdown 排版和相关邮件引用，点击即可回到原始邮件。</p>
+        </article>
+        <article>
+          <h2>本地向量化</h2>
+          <p>向量化只使用 Apple NaturalLanguage NLEmbedding，不使用远端 embedding 模型，也不上传邮件内容生成向量。</p>
+        </article>
+        <article>
+          <h2>附件体验</h2>
+          <p>支持附件名称解码、系统文件图标、打开附件、另存为，以及可读取附件内容参与本地索引。</p>
+        </article>
+      </section>
+
+      <section class="privacy">
+        <div>
+          <h2>Privacy First</h2>
+          <p>
+            Account passwords, OAuth tokens, and API keys are stored in macOS Keychain. AI chat is optional; regular mail features work without configuring an API key.
+          </p>
+        </div>
+        <a class="text-link" href="https://github.com/bennix/AISmartmail/blob/main/docs/privacy-policy.md">Privacy policy</a>
+      </section>
+    </main>
+  </body>
+</html>
+
