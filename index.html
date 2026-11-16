@@ -21,8 +21,8 @@
             A native SwiftUI mail client for macOS with local-only vectorization, AI Q&amp;A, attachments, drafts, and everyday mailbox workflows.
           </p>
           <div class="actions" aria-label="Primary links">
-            <a class="button primary" href="https://github.com/bennix/AISmartmail/releases/download/v0.1.12/AISmartmail-macOS-arm64.dmg">
-              下载 macOS DMG
+            <a class="button primary" href="https://github.com/bennix/AISmartmail/releases/latest/download/AISmartmail-macOS-universal.dmg">
+              下载最新公证版 DMG
             </a>
             <a class="button secondary" href="https://github.com/bennix/AISmartmail">
               查看 GitHub Repo
@@ -31,10 +31,23 @@
         </div>
         <div class="release-panel" aria-label="Release information">
           <span class="label">Latest Release</span>
-          <strong>v0.1.12</strong>
-          <span>Apple Silicon macOS build</span>
-          <a href="https://github.com/bennix/AISmartmail/releases/tag/v0.1.12">Release notes</a>
+          <strong>v0.1.13</strong>
+          <span>App 1.08 (5) · 2026-11-17</span>
+          <span>Apple Silicon + Intel · macOS 26.5+</span>
+          <span>Developer ID 签名 · Apple 公证</span>
+          <a href="https://github.com/bennix/AISmartmail/releases/tag/v0.1.13">更新说明 / Release notes</a>
+          <a href="https://github.com/bennix/AISmartmail/releases/download/v0.1.13/SHA256SUMS.txt">SHA-256 校验文件</a>
         </div>
+      </section>
+
+      <section class="release-update" aria-labelledby="release-update-title">
+        <h2 id="release-update-title">本次更新：改善邮件内容显示</h2>
+        <ul>
+          <li>修复内嵌图片丢失及 CID 图片引用无法显示的问题。</li>
+          <li>清理邮件摘要中的 CSS、脚本和 HTML 注释，修复对应的旧缓存摘要。</li>
+          <li>优先使用邮件自带的纯文本正文，正确显示常用 HTML 字符实体。</li>
+        </ul>
+        <p>下载后打开 DMG，将 myMail 拖入 Applications。安装包与应用均已附加 Apple 公证凭据。</p>
       </section>
 
       <section class="features" aria-label="Highlights">
