@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="AISmartmail is a native macOS AI mail client with local-only vectorization." />
-    <title>AISmartmail - macOS AI Mail Client</title>
+    <meta name="description" content="AISmartmail：原生 macOS 邮件客户端，多账户收发、附件、本地索引与可选 AI 问答。Native macOS mail with multiple accounts, local indexing and optional AI answers with sources." />
+    <title>AISmartmail — 原生 macOS 邮件与 AI 问答 | Native Mail &amp; AI Answers</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -12,71 +12,93 @@
       <section class="hero">
         <div class="hero-copy">
           <img class="app-icon" src="assets/aismartmail-icon.png" alt="AISmartmail app icon" />
-          <p class="eyebrow">Native macOS Mail Client</p>
+          <p class="eyebrow">原生 macOS 邮件客户端 · <span lang="en">Native macOS Mail</span></p>
           <h1>AISmartmail</h1>
           <p class="lead">
             原生 SwiftUI 邮件客户端，支持 IMAP/POP3/SMTP、附件、草稿、星标邮件，以及基于本地向量化数据的 AI 邮件问答。
           </p>
-          <p class="lead english">
+          <p class="lead english" lang="en">
             A native SwiftUI mail client for macOS with local-only vectorization, AI Q&amp;A, attachments, drafts, and everyday mailbox workflows.
           </p>
           <div class="actions" aria-label="Primary links">
             <a class="button primary" href="https://github.com/bennix/AISmartmail/releases/latest/download/AISmartmail-macOS-universal.dmg">
-              下载最新公证版 DMG
+              下载公证版 DMG / <span lang="en">Download DMG</span>
             </a>
             <a class="button secondary" href="https://github.com/bennix/AISmartmail">
-              查看 GitHub Repo
+              查看源码 / <span lang="en">Source on GitHub</span>
             </a>
           </div>
         </div>
         <div class="release-panel" aria-label="Release information">
-          <span class="label">Latest Release</span>
+          <span class="label">最新版本 / <span lang="en">Latest Release</span></span>
           <strong>v0.1.13</strong>
           <span>App 1.08 (5) · 2026-11-17</span>
           <span>Apple Silicon + Intel · macOS 26.5+</span>
           <span>Developer ID 签名 · Apple 公证</span>
+          <span lang="en">Developer ID signed · Apple notarized</span>
           <a href="https://github.com/bennix/AISmartmail/releases/tag/v0.1.13">更新说明 / Release notes</a>
-          <a href="https://github.com/bennix/AISmartmail/releases/download/v0.1.13/SHA256SUMS.txt">SHA-256 校验文件</a>
+          <a href="https://github.com/bennix/AISmartmail/releases/download/v0.1.13/SHA256SUMS.txt">SHA-256 校验 / <span lang="en">Checksums</span></a>
         </div>
       </section>
 
       <section class="release-update" aria-labelledby="release-update-title">
-        <h2 id="release-update-title">本次更新：改善邮件内容显示</h2>
+        <h2 id="release-update-title">本次更新：改善邮件内容显示<span class="heading-english" lang="en">What's new: clearer mail previews and inline images</span></h2>
         <ul>
           <li>修复内嵌图片丢失及 CID 图片引用无法显示的问题。</li>
           <li>清理邮件摘要中的 CSS、脚本和 HTML 注释，修复对应的旧缓存摘要。</li>
           <li>优先使用邮件自带的纯文本正文，正确显示常用 HTML 字符实体。</li>
         </ul>
+        <ul lang="en">
+          <li>Preserves embedded images and resolves CID image references in mail bodies.</li>
+          <li>Removes CSS, scripts and HTML comments from previews, and repairs matching cached previews.</li>
+          <li>Prefers the message's plain-text alternative and decodes common HTML character entities.</li>
+        </ul>
         <p>下载后打开 DMG，将 myMail 拖入 Applications。安装包与应用均已附加 Apple 公证凭据。</p>
+        <p class="english" lang="en">Open the DMG and drag myMail to Applications. Both the app and disk image include stapled Apple notarization tickets.</p>
       </section>
 
       <section class="features" aria-label="Highlights">
         <article>
-          <h2>邮件工作流</h2>
-          <p>支持通用邮箱配置、IMAP/POP3/SMTP、刷新收信、发送邮件、草稿同步、存档、垃圾邮件、星标和已读状态。</p>
+          <h2>原生 macOS 体验<span class="heading-english" lang="en">Built for your Mac</span></h2>
+          <p>SwiftUI 三栏界面，将账户、邮件列表与正文放在同一窗口。一个通用安装包，同时支持 Apple Silicon 和 Intel。</p>
+          <p class="english" lang="en">A native SwiftUI three-column layout keeps accounts, messages and reading together. One universal download runs on Apple Silicon and Intel Macs.</p>
         </article>
         <article>
-          <h2>AI 问答</h2>
-          <p>AI 回答基于已经向量化的邮件数据，支持 Markdown 排版和相关邮件引用，点击即可回到原始邮件。</p>
+          <h2>完整邮件工作流<span class="heading-english" lang="en">Everyday mail, covered</span></h2>
+          <p>支持 IMAP、POP3 和 SMTP，以及收发邮件、草稿、回复、转发、存档、垃圾邮件、星标和已读状态管理。</p>
+          <p class="english" lang="en">Connect through IMAP, POP3 and SMTP. Read and send mail, manage drafts, reply, forward, archive, mark junk, star messages and track read status.</p>
         </article>
         <article>
-          <h2>本地向量化</h2>
-          <p>向量化只使用 Apple NaturalLanguage NLEmbedding，不使用远端 embedding 模型，也不上传邮件内容生成向量。</p>
+          <h2>多账户管理<span class="heading-english" lang="en">Multiple accounts, separate indexes</span></h2>
+          <p>在同一应用中管理个人、学校和工作邮箱。每个账户使用独立的本地向量库，AI 检索限定在当前账户范围。</p>
+          <p class="english" lang="en">Manage personal, school and work mail in one app. Each account has its own local vector database, and AI retrieval stays within the current account.</p>
         </article>
         <article>
-          <h2>附件体验</h2>
-          <p>支持附件名称解码、系统文件图标、打开附件、另存为，以及可读取附件内容参与本地索引。</p>
+          <h2>本地邮件索引<span class="heading-english" lang="en">Index on your own Mac</span></h2>
+          <p>使用 Apple NaturalLanguage NLEmbedding 在本机生成向量，索引邮件正文和可读取的附件文本，不为生成向量上传邮件内容。</p>
+          <p class="english" lang="en">Apple NaturalLanguage NLEmbedding creates vectors locally from mail bodies and readable attachment text. Mail content is not uploaded to generate embeddings.</p>
+        </article>
+        <article>
+          <h2>带来源的 AI 问答<span class="heading-english" lang="en">AI answers with source messages</span></h2>
+          <p>用自然语言查找已索引邮件中的信息。回答支持 Markdown 和可点击的邮件引用，也可生成回复草稿，由你检查并发送。</p>
+          <p class="english" lang="en">Ask questions about indexed mail. Answers include Markdown formatting and clickable message references. Generate reply drafts, then review and send them yourself.</p>
+        </article>
+        <article>
+          <h2>正文与附件<span class="heading-english" lang="en">Rich messages and attachments</span></h2>
+          <p>阅读 HTML 邮件和内嵌图片，处理多语言主题及附件文件名。附件支持系统文件图标、打开和另存为。</p>
+          <p class="english" lang="en">Read HTML messages and embedded images, with decoding for multilingual subjects and filenames. Open or save attachments using familiar system file icons.</p>
         </article>
       </section>
 
       <section class="privacy">
         <div>
-          <h2>Privacy First</h2>
+          <h2>隐私与 AI 使用范围<span class="heading-english" lang="en">Your data and optional AI</span></h2>
           <p>
-            Account passwords, OAuth tokens, and API keys are stored in macOS Keychain. AI chat is optional; regular mail features work without configuring an API key.
+            密码、OAuth token 和 API Key 保存在 macOS 钥匙串。本地索引不上传邮件内容；使用可选的 AI 问答或回复功能时，相关邮件文本会发送给你配置的模型服务商。普通收发邮件不需要 AI API Key。
           </p>
+          <p class="english" lang="en">Passwords, OAuth tokens and API keys are stored in macOS Keychain. Local indexing does not upload mail content. Optional AI answers and replies send relevant mail text to the model provider you configure. Regular mail works without an AI API key.</p>
         </div>
-        <a class="text-link" href="https://github.com/bennix/AISmartmail/blob/main/docs/privacy-policy.md">Privacy policy</a>
+        <a class="text-link" href="https://github.com/bennix/AISmartmail/blob/main/docs/privacy-policy.md">隐私政策 / <span lang="en">Privacy policy</span></a>
       </section>
     </main>
   </body>
